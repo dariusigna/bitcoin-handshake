@@ -6,7 +6,7 @@ It uses `btcd` for the ease of testing.
 ### Testing
 1. Install [btcd](https://github.com/btcsuite/btcd).
 2. Run`btcd --configfile ./btcd.conf`
-3. Update `test.env` with the desired config values.
+3. Update `test.env` with the desired config values or set the environment variables
     - `TARGET_NODE_ADDRESS` - The address of the node you want to connect to
     - `NETWORK` - The network you want to connect to. (simnet, mainnet, testnet, regtest)
 4. Run `go run main.go`
