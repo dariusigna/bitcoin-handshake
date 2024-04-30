@@ -67,7 +67,7 @@ func (s *Server) createOutBoundConnectionPeer(targetAddr string) error {
 		return err
 	}
 
-	s.outboundPeer = peer.New(conn, false, targetAddr, s.network)
+	s.outboundPeer = peer.New(conn, true, targetAddr, s.network)
 	s.outboundPeer.SetConnection(conn)
 	go s.peerDoneHandler(s.outboundPeer)
 	return nil
